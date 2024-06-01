@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>WeatherApp</title>
+        <link rel="stylesheet" href="./style.css" />
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <div class="card">
+            <div class="search">
+                <input
+                    type="text"
+                    class="search-input"
+                    placeholder="搜尋任何城市"
+                    spellcheck="false"
+                />
+                <button>
+                    <img src="./images/search.png" />
+                </button>
+            </div>
+            <div class="error">
+                <p>無效的字元</p>
+            </div>
+            <div class="weather">
+                <div class="temp-switch-container">
+                    <button id="temp-switch" class="temp-switch-button">切換溫標</button>
+                    <label for="temp-switch" class="temp-switch-label"></label>
+                </div>
+                <img src="./images/rain.png" class="weather-icon" />
+                <h1 class="temp"></h1>
+                <h2 class="city"></h2>
+                <div class="detials">
+                    <div class="col">
+                        <img src="./images/humidity.png" />
+                        <div>
+                            <p class="humidity"></p>
+                            <p>濕度</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img src="./images/wind.png" />
+                        <div>
+                            <p class="wind"></p>
+                            <p>風速</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
